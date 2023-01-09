@@ -1,0 +1,113 @@
+/* CSS 작성 */
+
+/* 헤더 영역 */
+.header {
+  margin: 0 auto;
+  width: 102rem;
+}
+
+.brand {
+  margin: 10rem 0 4.8rem;
+}
+
+.brand__link {
+  display: block;
+  width: 17.6rem;
+}
+
+.brand__image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 상품 리스트 영역 */
+.discovery {
+  margin: 0 auto 10rem;
+  width: 103.6rem;
+}
+
+/* 리스트 헤드라인 영역 */
+.discovery__headline {
+  display: flex;
+  align-items: center;
+  margin: 0 0 1.6rem 0.8rem;
+}
+
+.discovery__title,
+.discovery__subtitle {
+  margin: 0;
+}
+
+.discovery__title {
+  font-size: 2.4rem;
+}
+
+.discovery__headline .divider {
+  margin: 0 1rem;
+  color: var(--color-gray-600);
+}
+
+.discovery__subtitle {
+  color: var(--color-gray-600);
+}
+
+/* 리스트 영역 */
+.discovery__list {
+  margin: 0.8rem 0 0 0;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.discovery__item {
+  float: left;
+  margin: 1.5rem 0.7rem 0;
+}
+
+.discovery__link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 31rem;
+  border: 1px solid var(--color-gray-500);
+}
+
+.discovery__link:hover {
+  border: 1px solid var(--color-blue-600);
+}
+
+.cardLink--large {
+  width: 50.2rem;
+}
+
+.cardLink--small {
+  width: 24.3rem;
+}
+
+.discovery__button {
+  position: absolute;
+  width: 4.2rem;
+  height: 4.2rem;
+  left: 2rem;
+  bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: background 0.4s;
+  background: var(--color-opacity-20)
+    url(./../../assets/icon/angle-right-square.svg) no-repeat 100% 50%;
+}
+
+.discovery__link:hover .discovery__button,
+.discovery__link:focus .discovery__button {
+  padding: 1.3rem 4rem 1.2rem 2rem;
+  width: auto;
+  color: var(--color-white);
+  background-color: var(--color-blue-600);
+}
+
+.discovery__link:hover .discovery__button::before,
+.discovery__link:focus .discovery__button::before {
+  content: attr(aria-label);
+}
